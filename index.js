@@ -107,7 +107,7 @@ for (let  i= 0; i < phraseToCheck.length; i++) { // recorro la frase y la dejo l
   }
 }
 
-let isPalindromo = true;
+let isPalindrome = true;
 
 for (let i = 0; i < cleanPhrase.length / 2; i++) {
   if (cleanPhrase[i] !== cleanPhrase[(cleanPhrase.length -1) - i]) {
