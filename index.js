@@ -38,7 +38,12 @@ hacker1.length > hacker2.length ? console.log(`The driver has the longest ${hack
 let hacker1SeparedLetters="";
 
 for (let i=0; i < hacker1.length; i++) {
-  hacker1SeparedLetters += hacker1[i].toUpperCase() + " ";
+  
+  if (i !== hacker1.length - 1) { // para no añadir un espacio al final
+    hacker1SeparedLetters += hacker1[i].toUpperCase() + " ";
+  }else {
+    hacker1SeparedLetters += hacker1[i].toUpperCase();
+  }
 }
 
 console.log(hacker1SeparedLetters);
